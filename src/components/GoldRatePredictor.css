@@ -1,0 +1,103 @@
+.heading{
+    font-size: 200%;
+    color: darkslateblue;
+    padding: 18px;
+    font-weight: 900;
+}
+.gold-card{
+    background-image: url("/public/gold-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 5px solid green; */
+    display: grid;
+    text-shadow:
+    -0.35px -0.35px 0 #ffffff,
+     0   -0.35px 0 #ffffff,
+     0.35px -0.35px 0 #ffffff,
+     0.35px  0   0 #ffffff,
+     0.35px  0.35px 0 #ffffff,
+     0    0.35px 0 #ffffff,
+    -0.35px  0.35px 0 #ffffff,
+    -0.35px  0   0 #ffffff;
+}
+
+.form-field{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+}
+
+.input-field{
+    height: 50px;
+    border-color: aqua;
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 75%;
+    border-radius: 8px;
+}
+
+.submit-button{
+    border-radius: 8px;
+    margin-top: 15px;
+    height: 50px;
+    background-color: darksalmon;
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.result-section{
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+    padding: 10px;
+}
+
+@media (max-width: 480px) {
+    .gold-card{
+        display: grid;
+        grid-template-rows: auto auto; /*//work on this one (change img adjusting on mobile) */
+    }
+    .form-field{
+        margin-bottom: 30px;
+    }
+    .input-field,.submit-button{
+        width: 70vw;
+    }
+    .input-section{
+        font-size: 8vw;
+    }
+    .result-section{
+        font-size: 4.25vh;
+    }
+}
+@media (min-width: 481px) {
+    .gold-card{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .form-field{
+        margin-bottom: 220px;
+    }
+    .input-field,.submit-button{
+        width: 30vw;
+    }
+    .input-section{
+        font-size: 2.5vw;
+    }
+    .result-section{
+        font-size: 6vh;
+        color: aliceblue;
+    }
+  }
